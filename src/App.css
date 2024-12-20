@@ -212,6 +212,15 @@ body {
     2px 2px 0 #000;    /* right and bottom shadow */
 }
 
+@media (max-width: 640px) {
+
+  .mobile-container {
+    max-height: 177px;
+
+  }
+
+}
+
 
 
 
