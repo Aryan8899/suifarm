@@ -16,6 +16,7 @@ import {
 import { FaTelegram, FaTwitter } from "react-icons/fa";
 
 import pic2 from "../photos/pic2.png";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false); // Toggle for sidebar visibility
@@ -47,12 +48,12 @@ const Sidebar = () => {
       >
         {/* Logo Section */}
         <div className="flex items-center justify-center mb-5">
-  <img
-    src={pic1}
-    alt="trump"
-    className="w-[300px] sm:w-[500px] h-[150px] sm:h-[120px] object-contain"
-  />
-</div>
+          <img
+            src={pic1}
+            alt="trump"
+            className="w-[300px] sm:w-[500px] h-[150px] sm:h-[120px] object-contain"
+          />
+        </div>
 
         {/* Navigation Links */}
         <nav className="space-y-2">
@@ -80,7 +81,7 @@ const Sidebar = () => {
               <ul className="mt-1 space-y-1 bg-customBlue rounded px-4 py-2">
                 <li>
                   <a
-                    href="https://pulsex.mypinata.cloud/ipfs/bafybeiesh56oijasgr7creubue6xt5anivxifrwd5a5argiz4orbed57qi/#/?outputCurrency=0xE846884430D527168B4EAaC80Af9268515D2f0CC"
+                    href="https://suidex-sigma.vercel.app/#/swap"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block hover:text-green-400"
@@ -90,7 +91,7 @@ const Sidebar = () => {
                 </li>
                 <li>
                   <a
-                    href="https://pulsex.mypinata.cloud/ipfs/bafybeiesh56oijasgr7creubue6xt5anivxifrwd5a5argiz4orbed57qi/#/add/V1/0xE846884430D527168B4EAaC80Af9268515D2f0CC/0xCc78A0acDF847A2C1714D2A925bB4477df5d48a6"
+                    href="https://suidex-sigma.vercel.app/#/addliquidity"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block hover:text-green-400"
@@ -117,9 +118,9 @@ const Sidebar = () => {
             {farmOpen && (
               <ul className="mt-1 space-y-1 bg-customBlue rounded px-4 py-2">
                 <li>
-                  <a href="#" className="block hover:text-green-400">
+                  <Link to="/farm" className="block hover:text-green-400">
                     Farms
-                  </a>
+                  </Link>
                 </li>
               </ul>
             )}
@@ -179,7 +180,7 @@ const Sidebar = () => {
               <ul className="mt-1 space-y-1 bg-customBlue rounded px-4 py-2">
                 <li>
                   <a
-                    href="https://atropine.gitbook.io/atropine"
+                    href="https://shitcoin-club.gitbook.io/suitrump-farm"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block hover:text-green-400"
@@ -223,9 +224,12 @@ const Sidebar = () => {
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2 text-yellow-500 hover:text-green-400 transition duration-300"
               >
-                <img src={pic5} alt="victorylogo0" className="w-10 h-10 object-contain" />
-<p className="text-white text-sm font-bold">$0.000018</p>
-
+                <img
+                  src={pic5}
+                  alt="victorylogo0"
+                  className="w-10 h-10 object-contain"
+                />
+                <p className="text-white text-sm font-bold">$0.000018</p>
               </a>
               <a
                 href="https://telegram.org"
