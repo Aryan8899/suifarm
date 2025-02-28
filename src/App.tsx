@@ -1,5 +1,5 @@
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
-// App.tsx
+import { Toaster } from "sonner";
 import { Header } from "./components/layout/Header";
 import { Sidebar } from "./components/layout/Sidebar";
 import { Dashboard } from "./pages/Dashboard";
@@ -20,6 +20,7 @@ const App = () => {
           </Routes>
         </main>
       </div>
+      <Toaster position="top-right" expand={false} richColors />
     </Router>
   );
 };

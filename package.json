@@ -24,6 +24,7 @@
     "react-tweet": "^3.2.1",
     "recharts": "^2.15.1",
     "save-dev": "^0.0.1-security",
+    "sonner": "^2.0.1",
     "swiper": "^11.1.15",
     "tailwind-scrollbar-hide": "^1.1.7",
     "viem": "^2.21.55",
