@@ -5,6 +5,7 @@ import { Sidebar } from "./components/layout/Sidebar";
 import { Dashboard } from "./pages/Dashboard";
 import { Farm } from "./pages/Farm";
 import { Pair } from "./pages/Pair";
+import PairDiscoveryDisplay from "./components/pool/PairDiscoveryDisplay";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
             <Route path="/" element={<Dashboard />} />
             <Route path="/farm" element={<Farm />} />
             <Route path="/pair" element={<Pair />} />
+            <Route path="/PairDiscoveryDisplay" element={<PairDiscoveryDisplay/>} />
           </Routes>
         </main>
       </div>
