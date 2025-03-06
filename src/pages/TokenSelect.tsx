@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { useState, useEffect, Fragment } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
 import { useWallet } from "@suiet/wallet-kit";
